@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="loginpage">
+        <div class="box">
+            <div id="form" class="form">
+                <h2>Head Tail Game</h2>
+                <form action="">
+                    <div class="inputBox">
+                        <label for="firstUser">First User Name</label>
+                        <input required class="font-bold text-white" type="text" placeholder="User Name" id="firstUser">
+                    </div>
+                    <div class="inputBox">
+                        <label for="secondUser">Second User Name</label>
+                        <input required class="font-bold text-white" type="text" placeholder="User Name" id="secondUser">
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Submit" id="submit_btn">
+                    </div>
+                </form>
+            </div>
+            <div class="p-16 font-bold text-center hidden" id="selection">
+                <h2 class="font-black text-white text-4xl">Head Tail Game</h2>
+                <img class="block w-64 mx-auto mt-5 mb-5" src="./images/heads.png" alt="">
+                <h4 class="text-white"><span class="font-extrabold text-xl" id="userName"></span> please Select any one?</h4>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded font-bold mt-4 w-32" id="head">Head</button>
+                <button class="text-white bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded font-bold w-32 mt-4 ml-5" id="tail">Tail</button>
+            </div>
+            <div id="coinToss" class="hidden p-6 text-center flex flex-col justify-evenly">
+                <h2 class="text-white font-black text-2xl font-serif text-3xl mb-4 tracking-widest">Head Tail Game</h2>
+                <div class="img w-full flex justify-center">
+                    <img class="block w-6/12 mb-16" id="coinImages" src="./images/heads.png" alt="">
+                </div>
+                <button class="w-full py-2 rounded-lg text-white font-bold bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 " id="toss-button">
+                    Toss Coin
+                  </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
