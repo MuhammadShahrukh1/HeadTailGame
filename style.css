@@ -180,7 +180,8 @@ body{
 @media only screen and (max-width: 576px){
 
     .loginpage .box{
-        width: 350px;
+        width: 100%;
+        left: 5%;
     }
     .loginpage .box .form .inputBox input[type="submit"]{
         /* max-width: 100px; */
